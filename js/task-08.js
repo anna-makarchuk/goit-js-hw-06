@@ -15,8 +15,10 @@ function onSubmit(event){
     if (email.value === "" || password.value==="") {
         alert("Please fill in all the fields!")
     }
-    const allFields=(`email:${email.value}, password:${password.value}`)
+   if (email.value !== "" && password.value !== "") {
+    const allFields = (`email:${email.value}, password:${password.value}`)
     console.dir(allFields);
+  }
     form.reset()
     return
 }
